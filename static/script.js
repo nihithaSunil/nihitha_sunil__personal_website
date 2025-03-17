@@ -55,6 +55,8 @@ function greetingFunc() {
     } else {
       greetingMessage = "Good night";
     }
+
+    greetingMessage += ", I am Nihitha Sunil";
   
     // Update the inner HTML of the <h2> element
     let greetingElement = document.getElementById("greeting");
@@ -62,5 +64,5 @@ function greetingFunc() {
       greetingElement.innerHTML = greetingMessage;
     }
   }
-  
+
   greetingFunc();
