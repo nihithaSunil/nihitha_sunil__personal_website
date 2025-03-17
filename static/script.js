@@ -35,16 +35,10 @@ function findTheBanana(array) {
     });
   }
 
-//   function findTheBanana(array) {
-//     array.forEach((item) => {
-//         if (item === "Banana") {
-//             alert("Banana found!");
-//         }
-//     });
-// }
 
-// findTheBanana(L1);
-// findTheBanana(L2);
+
+findTheBanana(L1);
+findTheBanana(L2);
 
 
 function greetingFunc() {
