@@ -44,16 +44,23 @@ findTheBanana(L2);
 function greetingFunc() {
     let d = new Date(); // Create a Date object
     let h = d.getHours(); // Get the current hour (0-23)
+    let greetingMessage = "";
   
     if (h < 12) {
-      console.log("Good morning");
+      greetingMessage = "Good morning";
     } else if (h >= 12 && h < 18) {
-      console.log("Good afternoon");
+      greetingMessage = "Good afternoon";
     } else if (h >= 18 && h < 20) {
-      console.log("Good evening");
+      greetingMessage = "Good evening";
     } else {
-      console.log("Good night");
+      greetingMessage = "Good night";
+    }
+  
+    // Update the inner HTML of the <h2> element
+    let greetingElement = document.getElementById("greeting");
+    if (greetingElement) {
+      greetingElement.innerHTML = greetingMessage;
     }
   }
-
+  
   greetingFunc();
