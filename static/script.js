@@ -56,7 +56,7 @@ function greetingFunc() {
     } else if (h >= 18 && h < 20) {
       greetingMessage = "Good evening";
     } else {
-      greetingMessage = "Good night";
+      greetingMessage = "Good night!";
     }
 
     greetingMessage += ", I am Nihitha Sunil";
