@@ -68,3 +68,4 @@ function greetingFunc() {
     }
   }
 
+  window.addEventListener("load", greetingFunc);
