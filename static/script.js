@@ -29,7 +29,7 @@ let L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
 function findTheBanana(array) {
     array.forEach((item) => {
-        console.log("Checking:", array[i]);
+        console.log("Checking:", array[item]);
       if (item === "Banana") {
         alert("Banana found!");
       }
