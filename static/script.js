@@ -1,4 +1,6 @@
-greetingFunc();
+if (window.location.href.includes("index.html")) {
+    greetingFunc();
+  }
 let x = 5;
 let y = 7;
 let z = x + y;
