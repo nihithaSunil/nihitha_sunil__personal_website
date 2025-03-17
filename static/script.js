@@ -28,12 +28,31 @@ let L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 let L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
 function findTheBanana(array) {
-    for (let i = 0; i < array.length; i++) {
-      if (array[i] === "Banana") {
+    array.forEach((item) => {
+        console.log("Checking:", array[i]);
+      if (item === "Banana") {
         alert("Banana found!");
       }
-    }
+    });
   }
 
 findTheBanana(L1);
 findTheBanana(L2);
+
+
+function greetingFunc() {
+    let d = new Date(); // Create a Date object
+    let h = d.getHours(); // Get the current hour (0-23)
+  
+    if (h < 12) {
+      console.log("Good morning");
+    } else if (h >= 12 && h < 18) {
+      console.log("Good afternoon");
+    } else if (h >= 18 && h < 20) {
+      console.log("Good evening");
+    } else {
+      console.log("Good night");
+    }
+  }
+
+  greetingFunc();
