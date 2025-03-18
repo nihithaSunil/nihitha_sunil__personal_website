@@ -46,18 +46,3 @@ button {
   color: white;
   cursor: pointer;
 }
-
-#hiddenList {
-  display: none;
-  list-style-type: square; 
-  margin-top: 10px; 
-}
-
-#readMore, #readLess {
-  color: blue;
-  cursor: pointer;
-}
-
-#readMore:hover, #readLess:hover {
-  color: darkblue;
-}

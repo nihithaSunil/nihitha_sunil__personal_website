@@ -11,7 +11,7 @@
     <script src="../static/script.js" defer></script>
     <title>Your name</title>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Nihitha Sunil</h1>
         <nav>
@@ -23,13 +23,16 @@
         
     </header>
     <div class="main">
-        <h2>Things I like to do for fun</h2>
+        <h3> Things I like to do for fun</h3>
+        <button id="showButton" onclick="showList()">Click to see...</button>
+        <ul id="hiddenList"> 
         <li>Playing basketball</li>
         <li>Reading Books</li>
         <li>Trying new cusines</li>
+        </ul>
     </div>        
     <footer>
-        <p>© 2025 designed and coded by Nihitha Sunil.</p>
+        <p id = "copyYear"> &copy; Designed and coded by Nihitha Sunil </p>
     </footer>
     
 </body>

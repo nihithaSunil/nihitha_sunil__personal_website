@@ -40,13 +40,13 @@ function findTheBanana(array) {
 
 
 
-// findTheBanana(L1);
-// findTheBanana(L2);
+findTheBanana(L1);
+findTheBanana(L2);
 
 
 function greetingFunc() {
-    let d = new Date(); 
-    let h = d.getHours(); 
+    let d = new Date(); // Create a Date object
+    let h = d.getHours(); // Get the current hour (0-23)
     let greetingMessage = "";
   
     if (h < 12) {
@@ -61,6 +61,7 @@ function greetingFunc() {
 
     greetingMessage += ", I am Nihitha Sunil";
   
+    // Update the inner HTML of the <h2> element
     let greetingElement = document.getElementById("greeting");
     if (greetingElement) {
       greetingElement.innerHTML = greetingMessage;
@@ -68,30 +69,3 @@ function greetingFunc() {
   }
 
   window.addEventListener("load", greetingFunc);
-
-  function addYear() {
-    const year = new Date().getFullYear();
-    document.getElementById("copyYear").textContent += year; 
-    console.log("hello")
-}
-
-function showList() {
-  const list = document.getElementById("hiddenList");
-  list.style.display = "block";
-
-  const button = document.getElementById("showButton");
-  button.style.display = "none";
-}
-$("#readMore").click(function() {
-  $("#shortIntro").hide(); 
-  $("#longIntro").show(); 
-  $("#readMore").hide(); 
-  $("#readLess").show(); 
-  });
-
-$("#readLess").click(function() {
-  $("#longIntro").hide(); 
-  $("#shortIntro").show(); 
-  $("#readLess").hide(); 
-  $("#readMore").show(); 
-});
