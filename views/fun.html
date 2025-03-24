@@ -22,7 +22,7 @@
         </nav>        
         
     </header>
-    <div class="main">
+    <!-- <div class="main">
         <h3> Things I like to do for fun</h3>
         <button id="showButton" onclick="showList()">Click to see...</button>
         <ul id="hiddenList"> 
@@ -30,7 +30,34 @@
         <li>Reading Books</li>
         <li>Trying new cusines</li>
         </ul>
-    </div>        
+    </div> -->
+    
+    <div class="mainLayout">
+        <div class="item1">
+            <h3> Things I like to do for fun</h3>
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul> 
+            <li>Playing basketball</li>
+            <li>Reading Books</li>
+            <li>Trying new cusines</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img src="../static/funimage.jpg" class="funIMG" alt="Fun Image">
+        </div>
+        <div class="item3">
+            <iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/sF80I-TQiW0" 
+            title="YouTube video player" frameborder="0" 
+            allowfullscreen></iframe>
+        </div>
+        <div class="item4 container">
+            <h2>Need Some Advice?</h2>
+            <p id="adviceText">Click the button to get a random piece of advice!</p>
+            <button onclick="getAdvice()">Get Advice</button>
+        </div>
+    </div>
+
     <footer>
         <p id = "copyYear"> &copy; Designed and coded by Nihitha Sunil </p>
     </footer>

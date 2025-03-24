@@ -75,13 +75,13 @@ function greetingFunc() {
     console.log("hello")
 }
 
-function showList() {
-  const list = document.getElementById("hiddenList");
-  list.style.display = "block";
+// function showList() {
+//   const list = document.getElementById("hiddenList");
+//   list.style.display = "block";
 
-  const button = document.getElementById("showButton");
-  button.style.display = "none";
-}
+//   const button = document.getElementById("showButton");
+//   button.style.display = "none";
+// }
 $("#readMore").click(function() {
   $("#shortIntro").hide(); 
   $("#longIntro").show(); 
@@ -95,3 +95,45 @@ $("#readLess").click(function() {
   $("#readLess").hide(); 
   $("#readMore").show(); 
 });
+
+
+function validateForm(event) {
+    event.preventDefault();
+
+    var nameField = document.getElementById("name");
+    var emailField = document.getElementById("email");
+    var commentField = document.getElementById("comment");
+    
+    if (!nameField.checkValidity()) {
+        alert("Please fill out your name.");
+        nameField.focus();
+        return false;
+    }
+    
+    if (!emailField.checkValidity()) {
+        alert("Please enter a valid email address.");
+        emailField.focus();
+        return false;
+    }
+    
+    if (!commentField.checkValidity()) {
+        alert("Please fill out your message.");
+        commentField.focus();
+        return false;
+    }
+    alert("Form submitted successfully!");
+    
+ 
+    return true;
+  }
+
+  function getAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("adviceText").innerText = data.slip.advice;
+      })
+      .catch(error => {
+        document.getElementById("adviceText").innerText = "Oops! Something went wrong.";
+      });
+  }
