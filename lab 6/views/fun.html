@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Your name professional website">
+    <script src="../static/script.js" defer></script>
+    <title>Your name</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Nihitha Sunil</h1>
+        <nav>
+            <a class="nav-links" href="../index.html">Home</a> |
+            <a class="nav-links" href="cv.html">CV</a> |
+            <a class="nav-links" href="contact.html">Contact Me</a> |
+            <a class="nav-links" href="fun.html">For Fun</a>
+        </nav>        
+        
+    </header>
+    <!-- <div class="main">
+        <h3> Things I like to do for fun</h3>
+        <button id="showButton" onclick="showList()">Click to see...</button>
+        <ul id="hiddenList"> 
+        <li>Playing basketball</li>
+        <li>Reading Books</li>
+        <li>Trying new cusines</li>
+        </ul>
+    </div> -->
+    
+    <div class="mainLayout">
+        <div class="item1">
+            <h3> Things I like to do for fun</h3>
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul> 
+            <li>Playing basketball</li>
+            <li>Reading Books</li>
+            <li>Trying new cusines</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img src="../static/funimage.jpg" class="funIMG" alt="Fun Image">
+        </div>
+        <div class="item3">
+            <iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/sF80I-TQiW0" 
+            title="YouTube video player" frameborder="0" 
+            allowfullscreen></iframe>
+        </div>
+        <div class="item4 container">
+            <h2>Need Some Advice?</h2>
+            <p id="adviceText">Click the button to get a random piece of advice!</p>
+            <button onclick="getAdvice()">Get Advice</button>
+        </div>
+    </div>
+
+    <footer>
+        <p id = "copyYear"> &copy; Designed and coded by Nihitha Sunil </p>
+    </footer>
+    
+</body>
+</html>

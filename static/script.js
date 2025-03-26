@@ -82,19 +82,19 @@ function greetingFunc() {
 //   const button = document.getElementById("showButton");
 //   button.style.display = "none";
 // }
-$("#readMore").click(function() {
-  $("#shortIntro").hide(); 
-  $("#longIntro").show(); 
-  $("#readMore").hide(); 
-  $("#readLess").show(); 
-  });
+// $("#readMore").click(function() {
+//   $("#shortIntro").hide(); 
+//   $("#longIntro").show(); 
+//   $("#readMore").hide(); 
+//   $("#readLess").show(); 
+//   });
 
-$("#readLess").click(function() {
-  $("#longIntro").hide(); 
-  $("#shortIntro").show(); 
-  $("#readLess").hide(); 
-  $("#readMore").show(); 
-});
+// $("#readLess").click(function() {
+//   $("#longIntro").hide(); 
+//   $("#shortIntro").show(); 
+//   $("#readLess").hide(); 
+//   $("#readMore").show(); 
+// });
 
 
 function validateForm(event) {
@@ -137,3 +137,66 @@ function validateForm(event) {
         document.getElementById("adviceText").innerText = "Oops! Something went wrong.";
       });
   }
+
+  console.log(window.location);
+
+  // if (let index = 0; index < array.length; index++){
+  //   const element = array[index]
+  // }
+  listItems = document.getElementsByTagName('li');
+  links = [document.getElementsByTagName('a')];
+  console.log(listItems);
+  console.log(links);
+
+  links.forEach(
+    function (){
+      console.log(links);
+    }
+  )
+
+  links.forEach(element => {
+    element.addclasslist
+  })
+  
+  // array.forEach(element => {
+
+  // })
+
+// function toggleNav() {
+//   const navbar = document.getElementById("navbar");
+//   if (navbar.className === "topnav") {
+//     navbar.className += " responsive";
+//   } else {
+//     navbar.className = "topnav";
+//   }
+// }
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   const currentPath = window.location.pathname.split("/").pop();
+//   const links = document.querySelectorAll("nav a.nav-links");
+
+//   links.forEach(link => {
+//     if (link.getAttribute("href").includes(currentPath)) {
+//       link.classList.add("active");
+//     }
+//   });
+// });
+  
+const AllLinks = document.querySelectorAll('nav a');
+AllLinks.forEach(
+MyLink => {
+if (MyLink.href.includes(window.location.pathname)) {
+MyLink.classList.add("active");
+}
+}
+)
+
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+  x.className += " responsive";
+  } else {
+  x.className = "topnav";
+  }
+}
+  

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    padding: 5px;
+    margin: 5px;
+}
+
+  #webname {
+    background-color: #92ad70;
+    color: white;
+    padding: 10px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #2a2a2a; 
+  margin-right: 15px;
+}
+
+th {
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  width: fit-content;
+}
+
+tr:nth-child(even) {
+  background-color: #daebc5;
+}
+
+form * {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: #92ad70;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* #hiddenList {
+  display: none;
+  list-style-type: square; 
+  margin-top: 10px; 
+} */
+
+#readMore, #readLess {
+  color: blue;
+  cursor: pointer;
+}
+
+#readMore:hover, #readLess:hover {
+  color: darkblue;
+}
+
+.funIMG {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.container {
+  border-radius: 10%;
+  display: inline-block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+.container button {
+  margin-top: 10px;
+}
+
+.mainLayout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item1, .item2, .item3, .item4 {
+  flex: 1 1 300px;
+}

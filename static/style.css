@@ -89,3 +89,134 @@ button {
 .item1, .item2, .item3, .item4 {
   flex: 1 1 300px;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header'
+  'nav nav'
+  'main_img main'
+  'bottom_content bottom_content'
+  'footer footer';
+
+}
+
+header{
+  grid-area: header;
+  background-color: rgb(218, 248, 179);
+}
+
+nav{
+  grid-area: nav;
+  background-color: rgb(252, 241, 189);
+}
+
+/* figure {
+  grid-area: figure;
+  background-color: lightpink;
+  height: 30vh;
+  
+} */
+main_img {
+  grid-area: main_img;
+  background-color: rgb(200, 254, 250);
+  height: 30vh;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(248, 175, 150);
+  height: 30vh;
+}
+
+summary{
+  grid-area: bottom-content;
+  background-color: lightblue;
+
+}
+
+bottom_content{
+  grid-area: bottom_content;
+  background-color: lightblue;
+}
+
+footer{
+  grid-area: footer;
+  background-color: rgb(222, 196, 247);
+
+}
+
+/* @media only screen and(max-width: 650px){
+  .grid-container {
+    grid-template-areas: 
+  'header '
+  'nav '
+  'figure '
+  'main '
+  'bottom-content '
+  'footer ';
+  }
+} */
+
+@media only screen and (max-width:650px) {
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'nav'
+  'main_img'
+  'main'
+  'bottom_content'
+  'footer';
+  }
+}
+
+.active {
+  color: red;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .topnav li a {
+  display: none;
+  }
+  .topnav li a.firstLink {
+  display: block;
+  }
+  .topnav li a.icon {
+  float: right;
+  display: block;
+  color: blue;
+  }
+}
+@media screen and (max-width: 650px) {
+  .topnav.responsive {
+  position: relative;
+  }
+  .topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+  .topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+  }
+}  
+
+  
+
+@keyframes glow {
+  0% { color: white; transform: scale(1); }
+  50% { color: lightblue; transform: scale(1.05); }
+  100% { color: white; transform: scale(1); }
+}
+
+#webname {
+  animation: glow 3s infinite ease-in-out;
+}
